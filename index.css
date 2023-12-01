@@ -1,0 +1,140 @@
+.a1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:10px;
+    align-items: flex-start;
+    padding: 5px 5%;
+}
+
+.video-list{
+    background: #fff;
+    border-radius: 5px;
+    height: 520px;
+    overflow-y: scroll;
+}
+.video-list::-webkit-scrollbar{
+width:7px;
+}
+
+.video-list::-webkit-scrollbar-track{
+    background: #ccc;
+    border-radius: 50px;
+}
+
+.video-list::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 50px;
+}
+
+.video-list .vid video{
+    width:100px;
+    border-radius: 5px;
+}
+
+.video-list .vid{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7f7f7;
+    border-radius:5px ;
+    margin:10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.video-list .vid:hover{
+    background: #eee;
+}
+.video-list .vid.active{
+    background: #2980b9;
+}
+
+.video-list .vid.active .title{
+    color: #fff;
+}
+
+.video-list .vid .title{
+    color: #333;
+    font-size: 17px;
+}
+
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .a1{
+        grid-template-columns: 1.5fr 1fr;
+       
+    }
+  }
+
+  @media (max-width: 768px){
+    .a1{
+        grid-template-columns: 1fr;
+       
+    }
+  }
+
+    
+
+
+
+    
+  
+
+
+
+h1{
+    text-align: center;
+}
+.b1{
+    padding: 10px;
+    font-size: large;  
+}
+
+.a3{
+    width: 20%;
+}
+
+.c1{
+    margin-left: 20px;
+    padding: 5px;
+    border-style: double;
+    height: 300px;
+}
+
+
+.c1>a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.b5{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.b2{
+    padding: 5px;
+}
+
+
+
+
