@@ -20,6 +20,7 @@ function onYouTubeIframeAPIReady() {
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
+      
     }
   });
 }
@@ -34,6 +35,27 @@ function onPlayerStateChange(event) {
     player.loadVideoById(videos[index_no]);
   }
 }
+
+
+let videoList = document.querySelectorAll('.vid');
+
+
+
+videoList.forEach(selectedVideo=> {
+selectedVideo.onclick=()=>{
+
+  for(all_videos of videoList){
+    all_videos.classList.remove('active');
+  }
+  selectedVideo.classList.add('active');
+
+  
+   
+}
+})
+
+
+
 
 
 
